@@ -14,19 +14,19 @@
     <!-- Indéxame NO y sígueme NO -->
     <meta name="robots" content="noIndex, noFollow" />
     <!-- Breve descripción del sitio que se verá en los resultados de búsqueda -->
-    <meta name="description" content="Sitio web de prueba elaborado en el curso de Confección y Publicación de Páginas Web (IFCD0110). Unidad Formativa UF1303, Elaboración de hojas de estilos" />
+    <meta name="description" content="Sitio web de prueba elaborado en el curso de Confección y Publicación de Páginas Web (IFCD0110). Unidad Formativa UF1303: Tratamiento de textos con CSS" />
     <!-- Ruta al favicon -->
-    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/vnd.microsoft.icon" />
+    <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/vnd.microsoft.icon" />
     <!-- Ruta a las hojas de estilos -->
     <link rel="stylesheet" type="text/css" href="../assets/css/application.css" />
     <!-- Título de la pestaña del navegador -->
-    <title>UF1303 | Elaboración de hojas de estilos</title>
+    <title>Textos CSS | UF1303</title>
 </head>
 
 <body>
     <!-- El header es la cabecera de la página web lleva el único encabezado h1 de la página -->
     <header>
-        <a href="index.html" title="Página principal">
+        <a href="../index.html" title="Página principal">
             <figure class="logo"></figure>
             <h1>Elaboración de hojas de estilos (UF1303)</h1>
         </a>
@@ -39,90 +39,170 @@
         <label for="icon-menu" class="icon-menu" aria-label="Abrir/Pechar">Menú</label>
         <ul>
             <li>
-                <a href="#">Inicio</a>
+                <a href="../index.html">Inicio</a>
             </li>
             <li><a href="#">Temas</a>
                 <ul>
                     <li>
-                        <a href="temas/textos.html">Textos</a>
+                        <a href="textos.html">Textos</a>
                     </li>
                     <li>
-                        <a href="temas/imagenes.html">Imagenes</a>
+                        <a href="imagenes.html">Imagenes</a>
                     </li>
                 </ul>
             </li>
             <li>
-                <a href="blog/nosotros.html">Nosotros</a>
+                <a href="../blog/nosotros.html">Nosotros</a>
             </li>
             <li>
-                <a href="blog/contacto.html">Contacto</a>
+                <a href="../blog/contacto.html">Contacto</a>
             </li>
         </ul>
     </nav>
     <main>
         <section class="tema textos agua justify">
-            <header class="portada" style="background-image: url('https://cdn.pixabay.com/photo/2016/11/17/23/29/programming-1832991_960_720.png');">
-                <h2>Hojas de estilo CSS3 en la creación de páginas web</h2>
+            <header class="portada">
+                <h2>Textos en CSS</h2>
             </header>
-            <article class="article index">
-                <h3>Las tres capas del diseño web</h3>
+            <article>
+                <h3>Referencias teóricas</h3>
+                <p><strong>Referencias</strong>: </p>
+                <ul>
+                    <li>
+                        <a href="../assets/pdf/UF1303_Elaboracion-hojas-de-estilo.pdf>">
+                            UF1303 - Elaboración de hojas de estilos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../assets/pdf/CSS_Manual_rapido.pdf>">
+                            Manual Rápido de CSS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../assets/pdf/CSS_Guia_ref_rap.pdf>">
+                            Guía de referencia rápida CSS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://developer.mozilla.org/es/docs/Learn/CSS/Styling_text/Fundamentals">
+                            Fundamentos de texto y fuentes tipográficas | MDN Web Docs (moz://a)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://uniwebsidad.com/libros/css/capitulo-6/texto-2">
+                            Introducción a CSS > Texto | uniwebsidad
+                        </a>
+                    </li>
+                </ul>
                 <p>
-                    Los estándares Web fomentan la separación de un contenido Web en 3 capas:
+                    <strong>Texto CSS</strong>
+                    es el módulo de CSS que define cómo realizar la manipulación de elementos de texto como los saltos de línea, la justificación, la alineación, la gestión de espacios en blanco y las transformaciones de texto.
+                </p>
+                <p>
+                    Las propiedades CSS que se usan para aplicar estilo al texto pueden clasificarse generalmente en dos categorías:
                 </p>
                 <ul>
                     <li>
-                        <strong>Contenido</strong>:
+                        <strong>Estilos del tipo de letra</strong>:
                         <span>
-                            Define estructura semántica y contenido de texto plano, se representa con el documento HTML.
+                            Propiedades que afectan al texto (qué tipo de letra se usa, su tamaño, si es negrita, itálica, etc.).
                         </span>
                     </li>
                     <li>
-                        <strong>Presentación</strong>:
+                        <strong>Estilos de disposición del texto</strong>:
                         <span>
-                            Añade el aspecto del contenido, lo representa la hoja de estilo CSS
-                        </span>
-                    </li>
-                    <li>
-                        <strong>Comportamiento</strong>:
-                        <span>
-                            Añade mayor grado de interacción y funciones complejas, es posible representarlo con un documento JS o de otras tecnologías semejantes
+                            Propiedades que afectan al espaciado y otras características relativas a la disposición del texto, lo que permite la elección de, por ejemplo, el espacio entre líneas y letras, y el modo como el texto se alinea dentro de
+                            la caja contenedora.
                         </span>
                     </li>
                 </ul>
-                <figure class="img">
-                    <img src="assets/img/index_capas-disenho-web.jpeg" alt="Descripcion de las capas del desarrollo web" />
-                    <figcaption>
-                        Fig.1.- Capas del diseño web: Estructura, Contenido, Apariencia y Comportamiento
-                    </figcaption>
-                </figure>
-                <p>
-                    Un documento html es un visualizador de la información.
+                <p class="nota">
+                    <strong>Nota</strong>:
+                    <span>
+                        Ten en cuenta que el efecto se aplica sobre todo el texto que hay dentro de un elemento como si fuera una única entidad. No puedes seleccionar y dar estilo a subsecciones de texto, a menos que las delimites con algún elemento
+                        apropiado (como <em>span</em> o <em>strong</em>), o con un pseudoelemento específico para el texto como ::first-letter (selecciona la primera letra del texto de un elemento), ::first-line (selecciona la primera línea del texto
+                        de un elemento), o ::selection (selecciona el texto que está resaltado por el cursor).
+                    </span>
                 </p>
+            </article>
+            <article>
+                <h3>Ejercicio</h3>
                 <p>
-                    Para hacer más atractivo este documento html , podemos utilizar diversas posibilidades como: combinación de colores, distintos tipos de letras, fondo del documento, ubicación por coordenadas en píxeles de un determinado texto,
-                    etc. Todas esas posibilidades las tenemos en las hojas de estilo o Style Sheets. Las hojas de estilo son una extensión del documento HTML, en las que se diseña la apariencia general del mismo.
+                    Crea una hoja de estilos de nombre "textos.css" con los siguientes estilos para los textos de esta página web:
                 </p>
+                <ol>
+                    <li>
+                        Busca en Google Fonts dos familias de fuentes para textos:
+                        <ul>
+                            <li>
+                                <strong>Con serifa</strong> para los encabezados
+                            </li>
+                            <li>
+                                <strong>Sin serifa</strong> para el resto de textos
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Proporciona una lista de tipos de letra seguros en caso de que el navegador no pueda disponer del tipo de letra preferido, estableciendo la prioridad separada en la declaración por comas
+                    </li>
+                    <li>
+                        Aplica un tamaño en pixeles para los textos: Una base para todos los textos y un tamaño mayor para los encabezados desde h6 a h1
+                    </li>
+                    <li>
+                        Transforma todos los encabezados a minúsculas pero con cada inicial de palabra en mayúscula
+                    </li>
+                    <li>
+                        Aplica un color para los encabezados h2 y otro para los encabezados inferiores
+                    </li>
+                    <li>
+                        Aplica un color de base para todos los textos que no sean encabezados
+                    </li>
+                    <li>
+                        Aplica el mismo color de los elementos h2 para los elementos strong
+                    </li>
+                    <li>
+                        Aplica el mismo color de los elementos h3 en adelante para los enlaces
+                    </li>
+                    <li>
+                        Aplica a los enlaces un grueso de letra en negrita
+                    </li>
+                    <li>
+                        Aplica para los elementos figcaption un tamaño menor y con estilo en itálica
+                    </li>
+                    <li>
+                        Establece el interlineado del texto de los párrafos en 1.2 del tamaño base
+                    </li>
+                </ol>
+
+                <h4>Extras</h4>
                 <p>
-                    Las principales ventajas de utilizar las hojas de estilo son:
+                    Estos estilos se agregan a modo de ejemplo de CSS avanzado. Referencias:
                 </p>
                 <ul>
                     <li>
-                        <strong>Accesibilidad</strong>:
-                        <span>
-                            Los datos se pueden presentar en función del usuario y adaptarlos a sus necesidades. No es lo mismo presentar una web en un Pc, que presentarla en un teléfono móvil, o presentarla a personas con alguna discapacidad.
-                        </span>
+                        <a href="https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-elements">
+                            Pseudoelementos CSS | MDN Web Docs (moz://a)
+                        </a>
                     </li>
                     <li>
-                        <strong>Mantenimiento</strong>:
-                        <span>
-                            Separa y centraliza la presentación, bien en diferentes archivos o en partes bien conocidas del archivo, con lo cual tenemos localizado el código que queremos mantener y/o actualizar
-                        </span>
+                        <a href="https://uniwebsidad.com/libros/css-avanzado/capitulo-3">
+                            Selectores avanzados | uniwebsidad
+                        </a>
+                    </li>
+                </ul>
+
+                <p>
+                    Estilos de cajas contenedoras de texto:
+                </p>
+                <ul>
+                    <li>
+                        Se aplica un márgen a los párrafos, excepto al párrafo final y a los hijos únicos.
                     </li>
                     <li>
-                        <strong>Simplicidad</strong>:
-                        <span>
-                            Se obtienen documentos más fáciles de entender y se reduce el tamaño de los mismos.
-                        </span>
+                        Se establecen todos los enlaces en display inline-block (por compatibilidad con Internet Explorer)
+                    </li>
+                    <li>
+                        Se aplica un ejemplo de estilos CSS3 para los enlaces
                     </li>
                 </ul>
             </article>

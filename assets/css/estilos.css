@@ -44,6 +44,23 @@ header.portada h2 {
     color: #ffffff;
 }
 
+/* Imagenes validadores */
+
+/* Reglas comunes a los tres */
+
+figure.w3c.css {
+    background-image: url('../svg/w3c/css.svg');
+}
+
+
+figure.w3c {
+    width: 88px;
+    height: 31px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /* Maquetación */
 
 body main section {

@@ -51,7 +51,12 @@ header.portada h2 {
 figure.w3c.css {
     background-image: url('../svg/w3c/css.svg');
 }
-
+figure.w3c.html5 {
+    background-image: url('../svg/w3c/html5.svg');
+}
+figure.w3c.wcag {
+    background-image: url('../svg/w3c/wcag.svg');
+}
 
 figure.w3c {
     width: 88px;
@@ -60,6 +65,60 @@ figure.w3c {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/* article.posicion {
+    position: relative;
+} */
+
+figure.caja {
+    width: 500px;
+    height: 300px;
+    background-color: yellow;
+    background-image: url('https://cdn.pixabay.com/photo/2017/11/11/21/55/freedom-2940655_960_720.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+article.imagen {
+    width: 500px;
+    height: 300px;
+    background-color: blue;
+    /* opacity: 0.5; */
+}
+
+article.imagen {
+    position: relative;
+}
+
+article.imagen:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-image: url('https://cdn.pixabay.com/photo/2017/11/11/21/55/freedom-2940655_960_720.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    opacity: 0.5;
+}
+
+article.imagen h2,
+article.imagen p {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+article.imagen p {
+    font-weight: bold;
+}
+
+
+
+
 
 /* Maquetación */
 

@@ -20,9 +20,9 @@
     <!-- Ruta a las hojas de estilos -->
     <link rel="stylesheet" type="text/css" href="../assets/css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="../assets/css/estilos.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/application.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="../assets/css/application.css" /> -->
     <!-- Título de la pestaña del navegador -->
-    <title>Textos CSS | UF1303</title>
+    <title>Imágnes CSS | UF1303</title>
 </head>
 
 <body>
@@ -64,7 +64,7 @@
     <main>
         <section class="tema textos agua justify">
             <header class="portada">
-                <h2>Textos en CSS</h2>
+                <h2>Imágenes en CSS</h2>
             </header>
             <article>
                 <h3>Referencias teóricas</h3>
@@ -86,131 +86,40 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://developer.mozilla.org/es/docs/Learn/CSS/Styling_text/Fundamentals">
-                            Fundamentos de texto y fuentes tipográficas | MDN Web Docs (moz://a)
+                        <a href="https://developer.mozilla.org/es/docs/Web/CSS/background-image">
+                            background-image | MDN Web Docs (moz://a)
                         </a>
                     </li>
                     <li>
-                        <a href="https://uniwebsidad.com/libros/css/capitulo-6/texto-2">
-                            Introducción a CSS > Texto | uniwebsidad
+                        <a href="https://uniwebsidad.com/libros/css/capitulo-8">
+                            Introducción a CSS > Imágenes | uniwebsidad
                         </a>
-                    </li>
-                </ul>
-                <p>
-                    <strong>Texto CSS</strong>
-                    es el módulo de CSS que define cómo realizar la manipulación de elementos de texto como los saltos de línea, la justificación, la alineación, la gestión de espacios en blanco y las transformaciones de texto.
-                </p>
-                <p>
-                    Las propiedades CSS que se usan para aplicar estilo al texto pueden clasificarse generalmente en dos categorías:
-                </p>
-                <ul>
-                    <li>
-                        <strong>Estilos del tipo de letra</strong>:
-                        <span>
-                            Propiedades que afectan al texto (qué tipo de letra se usa, su tamaño, si es negrita, itálica, etc.).
-                        </span>
-                    </li>
-                    <li>
-                        <strong>Estilos de disposición del texto</strong>:
-                        <span>
-                            Propiedades que afectan al espaciado y otras características relativas a la disposición del texto, lo que permite la elección de, por ejemplo, el espacio entre líneas y letras, y el modo como el texto se alinea dentro de
-                            la caja contenedora.
-                        </span>
-                    </li>
-                </ul>
-                <p class="nota">
-                    <strong>Nota</strong>:
-                    <span>
-                        Ten en cuenta que el efecto se aplica sobre todo el texto que hay dentro de un elemento como si fuera una única entidad. No puedes seleccionar y dar estilo a subsecciones de texto, a menos que las delimites con algún elemento
-                        apropiado (como <em>span</em> o <em>strong</em>), o con un pseudoelemento específico para el texto como ::first-letter (selecciona la primera letra del texto de un elemento), ::first-line (selecciona la primera línea del texto
-                        de un elemento), o ::selection (selecciona el texto que está resaltado por el cursor).
-                    </span>
-                </p>
-            </article>
-            <article>
-                <h3>Ejercicio</h3>
-                <p>
-                    Crea una hoja de estilos de nombre "textos.css" con los siguientes estilos para los textos de esta página web:
-                </p>
-                <ol>
-                    <li>
-                        Busca en Google Fonts dos familias de fuentes para textos:
-                        <ul>
-                            <li>
-                                <strong>Con serifa</strong> para los encabezados
-                            </li>
-                            <li>
-                                <strong>Sin serifa</strong> para el resto de textos
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        Proporciona una lista de tipos de letra seguros en caso de que el navegador no pueda disponer del tipo de letra preferido, estableciendo la prioridad separada en la declaración por comas
-                    </li>
-                    <li>
-                        Aplica un tamaño en pixeles para los textos: Una base para todos los textos y un tamaño mayor para los encabezados desde h6 a h1
-                    </li>
-                    <li>
-                        Transforma todos los encabezados a minúsculas pero con cada inicial de palabra en mayúscula
-                    </li>
-                    <li>
-                        Aplica un color para los encabezados h2 y otro para los encabezados inferiores
-                    </li>
-                    <li>
-                        Aplica un color de base para todos los textos que no sean encabezados
-                    </li>
-                    <li>
-                        Aplica el mismo color de los elementos h2 para los elementos strong
-                    </li>
-                    <li>
-                        Aplica el mismo color de los elementos h3 en adelante para los enlaces
-                    </li>
-                    <li>
-                        Aplica a los enlaces un grueso de letra en negrita
-                    </li>
-                    <li>
-                        Aplica para los elementos figcaption un tamaño menor y con estilo en itálica
-                    </li>
-                    <li>
-                        Establece el interlineado del texto de los párrafos en 1.2 del tamaño base
-                    </li>
-                </ol>
-
-                <h4>Extras</h4>
-                <p>
-                    Estos estilos se agregan a modo de ejemplo de CSS avanzado. Referencias:
-                </p>
-                <ul>
-                    <li>
-                        <a href="https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-elements">
-                            Pseudoelementos CSS | MDN Web Docs (moz://a)
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://uniwebsidad.com/libros/css-avanzado/capitulo-3">
-                            Selectores avanzados | uniwebsidad
-                        </a>
-                    </li>
-                </ul>
-
-                <p>
-                    Estilos de cajas contenedoras de texto:
-                </p>
-                <ul>
-                    <li>
-                        Se aplica un márgen a los párrafos, excepto al párrafo final y a los hijos únicos.
-                    </li>
-                    <li>
-                        Se establecen todos los enlaces en display inline-block (por compatibilidad con Internet Explorer)
-                    </li>
-                    <li>
-                        Se aplica un ejemplo de estilos CSS3 para los enlaces
                     </li>
                 </ul>
             </article>
-            <article class="posicion">
-                <h2>Bacground CSS</h2>
-                <figure class="caja"></figure>
+            <article>
+                <h2>Imágenes en CSS</h2>
+                <p>
+                    La propiedad background-image se emplea para establecer la imagen de fondo de cada elemento. La imagen se muestra en la zona que ocupan el contenido y el relleno del elemento, justo hasta su borde.
+                </p>
+                <p>
+                    Para indicar la imagen que se muestra como fondo de un elemento, se utiliza una URL. Los navegadores no restringen el tipo de URL que se pueden utilizar, por lo que pueden ser URL externas/internas y URL relativas/absolutas.
+                </p>
+                <p>
+                    La URL de la imagen que se quiere mostrar se incluye dentro de los paréntesis de la palabra url(). De forma opcional, el valor de la URL se puede encerrar entre comillas simples o entre comillas dobles.
+                </p>
+                <p>
+                    Por defecto el CSS repite ( background-repeat ) la imagen de fondo ( background-image ) en todas las direcciones, tantas veces como fuera necesario, hasta cubrir completamente el elemento. Es exactamente lo que hacen los patrones. Si la imagen es más grande de lo necesario podemos utilizar la propiedad background-sizestar para establecer el tamaño de la imagen que se repite
+                </p>
+                <h3>Elementos SVG</h3>
+                <p>
+                    Si los elementos svg están guardados en documentos .svg externos podemos utilizarlos como imagen de fondo de la misma manera como lo hacemos con las imágenes jpg, png, gif:
+                </p>
+            </article>
+
+            <article class="imagen">
+                <h2>Ejemplos de imágenes con CSS</h2>
+                <p>Aplicando opacidad</p>
             </article>
         </section>
     </main>
@@ -275,7 +184,7 @@
             </div>
 
             <a href="../index.html" target="_blank" title="Ver o sitio web de UF1303" class="no-border pattern abcenter">
-                <figure style="background-image:url(/assets/svg/logo.svg);" aria-label="Logo"></figure>
+                <figure aria-label="Logo"></figure>
             </a>
         </section>
 

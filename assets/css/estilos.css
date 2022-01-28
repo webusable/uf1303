@@ -185,3 +185,74 @@ p.nota {
     border-left: 0.25em solid darkblue;
     border-radius: 5px;
 }
+
+/* Estilos para el footer del sitio web */
+
+/* Fondo color negro  */
+body > footer {
+    background-color: black;
+    padding-left: 7.5vw;
+    padding-right: 7.5vw;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+/* Quitar estilos de lista */
+body > footer li {
+    list-style: none;
+}
+
+/* Convertir li en elementos en línea */
+body > footer li.validator,
+body > footer li.legal {
+    display: inline-block;
+    font-size: small;
+}
+
+/* Reducir tamaño iconos validadores */
+figure.w3c{
+    width: 5vw;
+    height: 1.76vw;
+    margin: 0.5em;
+    /* width: 2em;
+    height: 0.7em; */
+}
+
+/* Poner el mismo márgen que los figures validadores */
+li.legal {
+    margin: 0.5em;
+}
+
+li.legal,
+li.legal a {
+    height: 4em;
+    line-height: 4em;
+}
+
+/* Textos en color blanco */
+body > footer h2,
+body > footer li a,
+body > footer li a span {
+    color: white;
+}
+
+/* No mostrar el h2 del footer del sitio */
+footer section.footer__pie h2 {
+    display: none;
+}
+
+section.contentinfo a.pattern figure {
+    width: 20vw;
+    height: 13.32vw;
+    background-image: url('../svg/logo.svg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section.contentinfo a.pattern {
+    width: 40%;
+}
+div[role="group"] {
+    width: 40%;
+}

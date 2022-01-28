@@ -11392,6 +11392,7 @@ body > footer {
       height: 7.63881vmax;
       margin: 0;
       background-color: transparent;
+      background-image: url('../svg/logo.svg');
       background-repeat: no-repeat;
       background-position: 50% 50%;
       background-size: contain;

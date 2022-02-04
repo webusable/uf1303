@@ -1,0 +1,204 @@
+/* Enunciado 1.- Cree un documento estilos.css que esté dentro de una carpeta llamada “style” */
+
+/* 1.b.- El archivo css contendrá una regla para que el fondo de la página sea de color amarillo claro, y que todo el contenido aparezca centrado. (0.5 puntos) */
+
+body {
+    /* Fondo amarillo claro */
+    background-color: lightyellow;
+    /* Contenido centrado */
+    margin: 0 auto;
+}
+
+/* 2.a.- El encabezado se sitúe centrado en la parte superior de la página ocupando el 90% del ancho y con un fondo de color gris. Las letras estarán en color blanco y en negrita. (0.5 puntos) */
+
+header {
+    /* 90% del ancho */
+    width: 90%;
+    /* Centrado */
+    margin: 0 auto;
+    /* Fondo gris */
+    background-color: grey;
+}
+
+header h1 {
+    margin: 0 auto;
+    padding: 0.5em;
+    /* Letras en color blanco */
+    color: white;
+    /* Alineación al centro f(no lo pide el enunciado) */
+    text-align: center;
+    /* El navegador pinta los encabezados en negrita de forma predeterminada */
+    /* Nada que hacer */
+}
+
+/* 2.b.- El menú se situará en la parte izquierda de la página, ocupando 200px de ancho, y con un color de fondo rosa. Se quiere simular la apariencia de botones por lo que las opciones del menú serán enlaces con apariencia de botones de color blanco con bordes redondeados. (1 punto) */
+
+nav.menu {
+    /* 200px de ancho */
+    width: 200px;
+    /* Creamos un espacio alrededor de la caja (no lo pide el enunciado) */
+    margin: 1em;
+    /* Texto centrado */
+    text-align: center;
+    /* Fondo rosa */
+    background-color: pink;
+    /* Para romper la caja en bloque y se convierta en un elmento de línea */
+    display: inline-block;
+    /* Esto para que se vea a paño con el header (no se pide en el enunciado) */
+    margin-left: 5%;
+}
+
+/* Quitar los estilos de lista predeterminados */
+nav.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0.5em;
+}
+
+/* Apariencia de botones */
+nav.menu ul li {
+    margin: 1em;
+    padding: 0.5em 1em;
+    background-color: white;
+    border: solid black;
+    border-radius: 5px;
+}
+
+/* Eliminar el borde inferior de los enlaces */
+nav.menu ul li a {
+    text-decoration: none;
+}
+
+/* 2.c.- La zona de contenidos se situará a la derecha del menú lateral izquierdo (0.25 puntos). El contenido será distinto dependiendo de la página donde estemos. Crear las páginas para las opciones del menú “Economía”, “Deportes” y “Tecnología”, de forma que al pulsar el botón se vaya a la página correspondiente. Para distinguir la página en la que estamos se puede escribir un texto en el contenido como “Esta es la sección de Economía”, “Esta es la sección de Deportes”, ... (0.75 puntos) */
+
+main {
+    /* Calcular un ancho de la caja para que se sitúe en línea con el menú */
+    width: 60%;
+    /* Para romper la caja en bloque y se convierta en un elmento de línea */
+    display: inline-block;
+    /* Situar la caja arriba */
+    vertical-align: top;
+    /* Mismo márgen que el menu (no lo pide el enunciado)*/
+    margin: 1em;
+    /* Relleno por si hay que añadir color de fondo */
+    padding: 1em;
+    /* Se añade un borde para ver la situación junto al menu (no lo pide el enunciado) */
+}
+
+
+/* 2.d.- Al pasar el ratón por encima de los botones cambiarán de color de fondo a amarillo y la letra a negrita (1 punto) */
+
+nav.menu ul li:hover {
+    /* Fondo amarillo */
+    background-color: yellow;
+    /* letra en negrita */
+    font-weight: bold;
+}
+
+
+/* 2.e.- Un pie situado en la parte inferior de la página que ocupará el 100% del ancho de la página y color de fondo negro con las letras blancas. El texto estará alineado a la derecha. Aparecerá un número de teléfono y debajo una dirección de email. (1 punto) */
+
+
+footer.pie {
+    /* Ocupará el 100% del ancho */
+    width: 100%;
+    /* Fondo negro */
+    background-color: black;
+    /* Letras blancas */
+    /* color: white; */
+    /* Alineado a la derecha */
+    text-align: right;
+}
+
+/* Quitar los estilos de lista predeterminados */
+footer.pie ul {
+    list-style: none;
+    margin: 0;
+    /* Para situar el texto a paño con el header (no lo pide el enunciado) */
+    padding: 1em 5%;
+}
+
+footer.pie ul li a {
+    /* Letras blancas */
+    color: white;
+    text-decoration: none;
+}
+
+
+/* 2.f.- Modificar las reglas CSS cuando la pantalla sea inferior a 400px de la siguiente manera (1 punto) */
+
+@media (max-width: 400px) {
+    /* 2.f.a El color de fondo de la página será transparente */
+    body {
+        background-color: transparent;
+    }
+
+    /* 2.f.b.- El header ocupará todo el ancho de la página */
+    header.encabezado {
+        width: 100%;
+    }
+
+    /* Quitar el margin por defecto de los h1 y poner un poco de relleno arriba y abajo (no lo pide el enunciado) */
+    header.encabezado h1 {
+        margin: 0;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    /* 2.f.c.- El menú estará centrado, en color de fondo verde claro y con borde redondeados */
+    nav.menu {
+        /* Convertir de nuevo a elemento de blque */
+        display: block;
+        /* Color verde claro */
+        background-color: lightgreen;
+        /* Bordes redondeados */
+        border-radius: 5px;
+        /* Quitar el ancho de 200px */
+        width: 90%;
+        /* Centrar caja */
+        margin: 0 auto;
+    }
+
+    /* 2.f.d.- La zona de contenidos tendrá fondo color azure y un borde redondeado */
+    main {
+        /* Convertir de nuevo a elemento de blque */
+        display: block;
+        /* Poner el mismo ancho que el menu (no lo pide el enunciado) */
+        width: 90%;
+        /* Centrar caja */
+        margin: 0 auto;
+        /* Cambiar el padding de la pantalla grande (no lo pide el enunciado) */
+        padding: 5%;
+        /* Fondo azure */
+        background-color: azure;
+        /* Borde redondeado */
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+
+    /* Para que menu y contenido ocupen casi toda la pantalla del móvil (no lo pide el enunciado) */
+    nav.menu,
+    main {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* Agregar un poco de espacio entre las cajas (no lo pide el enunciado) */
+    header.encabezado,
+    nav.menu,
+    main,
+    footer.pie {
+        /* margin: 1em; */
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    /* Eliminar ese espacio agregado al principio y al final de la página (no lo pide el enunciado) */
+    header.encabezado {
+        margin-top: 0;
+    }
+    footer.pie {
+        margin-bottom: 0;
+        /* Centrar el texto en formato móvil (no lo pide el enunciado) */
+        text-align: center;
+    }
+}

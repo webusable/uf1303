@@ -1,0 +1,150 @@
+/* Enunciado 1.- Cree un documento estilos.css que esté dentro de una carpeta llamada “css*/
+
+/* 1.b una regla para que el fondo de la página sea de color verde claro, y que todo el contenido aparezca centrado. */
+
+body {
+    background-color: lightgreen;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* El encabezado se sitúe centrado en la parte superior de la página ocupando todo el ancho y con un fondo de color verde oscuro. Las letras estarán en color blanco. */
+
+header.encabezado {
+    width: 100%;
+    background-color: darkgreen;
+    color: white;
+    text-align: center;
+}
+
+/* Ancho de 200px, fondo chocolate, situado a la izq. botones verticales */
+nav.menu {
+    background-color: chocolate;
+}
+
+
+nav.menu,
+main {
+    /* Para romper las cajas en bloque y se conviertan en un elemento en línea */
+    display: inline-block;
+    /* Alinear la caja arriba */
+    vertical-align: top;
+}
+
+nav.menu {
+    /* ancho de 200px */
+    width: 200px;
+}
+
+main {
+    /* Un ancho que situe las dos cajas en la misma línea */
+    width: 60%;
+    border: 1px solid black;
+}
+
+
+/* Se quiere simular la apariencia de botones por lo que las opciones del menú serán enlaces con apariencia de botones de color blanco con bordes redondeados. */
+
+nav.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 1em;
+}
+
+nav.menu ul li {
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0.2em;
+    padding: 0.5em 1em;
+}
+
+nav.menu ul li a {
+    text-decoration: none;
+}
+
+/* Al pasar el ratón por encima de los botones cambiarán de color de fondo a gris oscuro y la letra a color blanco. */
+
+nav.menu ul li:hover {
+    background-color: darkgrey;
+}
+
+nav.menu ul li:hover a {
+    color: white;
+}
+
+/* Estilo para el pie de página */
+
+
+footer.pie {
+    /* width: 100%; */
+    padding: 1em 0;
+    background-color: darkgreen;
+    text-align: right;
+    color: white;
+}
+
+footer.pie ul {
+    list-style: none;
+    margin: 0;
+}
+
+
+footer.pie ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Codificar las reglas CSS cuando la pantalla sea inferior a 360px de la siguiente manera */
+
+@media (max-width: 360px) {
+    body {
+        background-color: transparent;
+    }
+
+    header.encabezado {
+        width: 100%;
+    }
+
+    /* Para quitar el margin por defecto de los h1 y poner un poco de relleno arriba y abajo */
+    header.encabezado h1 {
+        margin: 0;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    nav.menu {
+        text-align: center;
+        background-color: lightyellow;
+        border-radius: 10px;
+    }
+
+    main {
+        background-color: azure;
+        border-radius: 10px;
+    }
+
+    /* Para que menu y contenido ocupen casi toda la pantalla del móvil */
+    nav.menu,
+    main {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    header.encabezado,
+    nav.menu,
+    main,
+    footer.pie {
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    header.encabezado {
+        margin-top: 0;
+    }
+    footer.pie {
+        margin-bottom: 0;
+        text-align: center;
+    }
+}

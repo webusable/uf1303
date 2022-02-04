@@ -1,0 +1,111 @@
+/* UF1302 UD 2 - Actividad 1 */
+/* 1.b.- Cree un documento css para crear las reglas de estilo de la página */
+body {
+    /* 1.b.- Cree la primera regla para darle al fondo de la página un color plata. */
+    background-color: silver;
+}
+
+/* 1.c.- Reglas para el Encabezado */
+/* Como puede haber más de un header en la página (para secciones, artículos, barras laterales, etc) lo idóneo es especificar a qué encabezado se aplican las reglas de estilo del enunciado */
+
+/* Selector de hijos (>) */
+
+body > header {
+    /* 1.c.- Ocupará todo el ancho disponible. */
+    width: 100%;
+    /* 1.c.- Color de fondo marrón */
+    background-color: brown;
+    /* 1.c.- letras de color blanco */
+    color: white;
+    /* 1.c.- estará centrado */
+    text-align: center;
+}
+
+
+/* 1.d.- Reglas de estilos para el menú */
+/* Como puede haber varios menús de navegación en una página web, lo idóneo es espeficar a qué nav se aplican estas reglas de estilo */
+
+/* Selector de hijos (>) */
+
+body > nav {
+    /* 1.d.- Color de fondo del menú cyan claro */
+    background-color: lightcyan;
+}
+
+body > nav > ul {
+    /* Esto no lo pide el enunciado */
+    padding: 1em;
+    /* 1.d.- Las opciones no mostrarán el texto subrayado ni ninguna de las características típicas de los enlaces */
+    list-style: none;
+    /* 1.d.- El menú estará centrado */
+    text-align: center;
+}
+
+body > nav > ul li {
+    /* Esto no lo pide el enunciado */
+    padding: 0.5em;
+    /* 1.d.- Las opciones estarán distribuidas de forma horizontal */
+    display: inline;
+    /* 1.d.- color de los botones de opciones khaki. */
+    background-color: khaki;
+    /* 1.d.- Los botones tendrán un borde punteado */
+    border: dotted;
+}
+
+body > nav > ul li a {
+    /* 1.d.- Las opciones no mostrarán el texto subrayado ni ninguna de las características típicas de los enlaces */
+    text-decoration: none;
+}
+
+/* 1.e.- Al pasar el ratón por encima de alguna opción cambiará el color del texto a rojo. */
+body > nav > ul li a:hover {
+    color: red;
+}
+
+
+/* 1.f.- Reglas de estilo para el artículo */
+
+/* Como puede haber varios artículos en una página web, podríamos espeficar que se apliquen estas reglas de estilo, p.ej., al primer artículo del main */
+
+main > article:first-of-type {
+    /* 1.f.- El párrafo tendrá un color de fondo rosa */
+    /* En realidad aquí se está aplicando el color de fondo a todo el artículo, y no sólo al/a los párrafos/s */
+    background-color: pink;
+}
+
+main > article:first-of-type h2 {
+    /* 1.f.- El título del artículo tendrá un fondo amarillo claro */
+    background-color: #ffb;
+}
+
+/* El pseudo-elemento ::first-letter aplica estilos a la primera letra de la primera línea un elemento de bloque, sólo cuando no es precedido de otro contenido (como imágenes o tablas). */
+
+main > article:first-of-type p::first-letter {
+    /* 1.f.- La primera letra del texto tendrá un estilo especial */
+    font-style: oblique;
+    /* 1.f.- La primera letra del texto tendrá un tamaño extragrande */
+    font-size: xx-large;
+    /* 1.f.- La primera letra del texto en negrita */
+    font-weight: bold;
+    /* 1.f.- La primera letra del texto tendrá color rojo */
+    color: red;
+}
+
+
+/* 1.g.- Reglas de estilo para el pié de página */
+
+/* Como puede haber más de un footer en la página (para secciones, artículos, barras laterales, etc) lo idóneo es especificar a qué pie de página se aplican las reglas de estilo del enunciado, en mi caso de ejemplo:  */
+
+body > footer {
+    /* 1.g.- El pie de la página ocupará el 60% del ancho */
+    width: 60%;
+    margin: 0 auto;
+    /* 1.g.- El pie de la página tendrá el texto alineado al centro */
+    text-align: center;
+    /* 1.g.- El pie de la página tendrá un fondo marrón */
+    background-color: brown;
+    /* 1.g.- El pie de la página tendrá letras blancas */
+    color: white;
+    /* 1.g.- El pie de la página tendrá bordes redondeados */
+    border-radius: 5px;
+}

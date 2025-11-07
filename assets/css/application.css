@@ -232,13 +232,13 @@ template {
   content: "\e901"; }
 
 .icon-location:before {
-  content: "\e902"; }
+  content: "\1F4CD"; }
 
 .icon-locationheart:before {
   content: "\e903"; }
 
 .icon-mail:before {
-  content: "\e904"; }
+  content: "\2709"; }
 
 .icon-menu:before {
   content: "\e905"; }

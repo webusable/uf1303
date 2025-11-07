@@ -89,6 +89,7 @@ article.imagen {
 
 article.imagen {
     position: relative;
+    margin: 7.5vw;
 }
 
 article.imagen:before {
@@ -105,6 +106,9 @@ article.imagen:before {
     opacity: 0.5;
 }
 
+article.imagen h2 {
+    font-size: larger;;
+}
 article.imagen h2,
 article.imagen p {
     position: relative;

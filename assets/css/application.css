@@ -10831,7 +10831,10 @@ body main section.tema {
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
-    background: #fff; }
+    background: #fff; 
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+  }
   body main article.cuestionario > header.portada h2,
   body main article.cuestionario > header.portada h3,
   body main article.cuestionario > header.portada h4,
@@ -15759,6 +15762,7 @@ ul.social li.svg-icon {
 
 body main section.tema {
   width: 100%;
+  padding:0;
   padding-bottom: 20vh; }
   @media screen and (max-width: 30rem) {
     body main section.tema > article {
